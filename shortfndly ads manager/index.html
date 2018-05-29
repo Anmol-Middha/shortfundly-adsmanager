@@ -119,8 +119,6 @@
     font-size: 24px;
     font-weight: 700;
   }
-
-
   .footer-font{
     font-size: 11px;
     font-family: Open Sans;
@@ -240,9 +238,26 @@
       display: block;
       font-style: normal;
       font-size: 8px;
-      color: #ffffff;
+      color: black;
       text-align:left;
-
+  }
+  #myNavbar ul li a{
+    color: #d0021b;
+    font-size: 18px;
+  }
+  #myNavbar ul li a:hover{
+    background-color: #d0021b;
+    color: white;
+  }
+  #myNavbar ul li a:focus{
+    background-color: #d0021b;
+    color: white;
+    font-weight: 700;
+  }
+  .navbar-inverse .navbar-nav>.active>a{
+    background-color: #d0021b;
+    color:white!important;
+  }
 
   </style>
 </head>
@@ -260,7 +275,7 @@
 </script>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-right:0; width: 100vw; padding-right: 0px!important">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-right:0; width: 100vw; padding-right: 0px!important; background-color: white;">
   <div class="container-fluid">
     <div class="row">
       <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">

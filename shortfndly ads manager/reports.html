@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shortfundly AdsManager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- fontawesome cdn-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style >
+	.fit{
+		white-space: nowrap;
+	}
+  .nofit{
+    white-space: normal;
+    height: 100px;
+  }
+	.data-color{
+		background-color: white;
+	}
+</style>
+<body>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h2>Reports</h2>
+		<ol class="breadcrumb">
+  			<li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+  			<li class="breadcrumb-item active">Reports</li>
+		</ol>
+		<div class="row">
+			<div class="col-md-6 col-xs-6"><button class="btn btn-block nofit" id="download-report-btn">DOWNLOAD REPORT</button></div>
+			<div class="col-md-6 col-xs-6"><button class="btn btn-block nofit" id="schedule-report-btn">SCHEDULE REPORT DELEIVERY</div>
+		</div>
+
+		<div class="container-fluid" id="download_report" style="position: relative">
+			<div class="row">
+        <div class="col-md-3 col-12">
+          <button class="btn btn-block">Create New</button>
+        </div>     
+      </div>
+      <div class="row fit">
+        <div class="col-md-3">
+					<label>Show</label>
+					<select class="form-control" name="">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+				</div>
+				<div class="col-md-offset-6 col-md-3 col-12">
+					<br>
+            		<div class="input-group add-on" style="width: 100%">
+              			<input type="text" name="search" id="search" class="form-control" placeholder="Search">
+                		<div class="input-group-btn">
+                  			<button type="button" name="srchbtn" class="btn" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                		</div>
+                </div>	
+        </div>      
+      </div> 
+      <div style="overflow-x: scroll">
+        <table class="table table-responsive">
+          <tr>
+          <th class="fit">REPORT NAME</th>
+          <th class="fit">DATE RANGE</th>
+          <th class="fit">REPORT CREATION DATE</th>
+          <th class="fit">ACTIONS</th>
+          </tr>
+          <tr>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          </tr>
+        </table>
+      </div>
+
+
+    <div class="container-fluid" id="schedule_report" style="position: absolute; top:0px; padding: 0">
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <button class="btn btn-block">Create New</button>
+        </div>     
+      </div>
+      <div class="row fit">
+        <div class="col-md-3">
+          <label>Show</label>
+          <select class="form-control" name="">
+            <option>10</option>
+            <option>25</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+        <div class="col-md-offset-6 col-md-3 col-12">
+          <br>
+                <div class="input-group add-on" style="width: 100%">
+                    <input type="text" name="search" id="search" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button type="button" name="srchbtn" class="btn" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>  
+        </div>      
+      </div> 
+      <div style="overflow-x: scroll">
+        <table class="table table-responsive">
+          <tr>
+          <th class="fit">REPORT NAME</th>
+          <th class="fit">DATE RANGE</th>
+          <th class="fit">DELIEVERY FREQUENCY</th>
+          <th class="fit">EMAIL TO RECEIVED REPORTS</th>
+          <th class="fit">RULE CREATED</th>
+          <th class="fit">ACTIONS</th>
+          </tr>
+          <tr>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          <td class="data-color">sample</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+    <div style="background-color: white;height: 500px;padding: 20px">Showing x to x of x entries
+        <nav aria-label="Page navigation example">
+			     <ul class="pagination">
+			       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			       <li class="page-item"><a class="page-link" href="#">1</a></li>
+			       <li class="page-item"><a class="page-link" href="#">2</a></li>
+			       <li class="page-item"><a class="page-link" href="#">3</a></li>
+			       <li class="page-item"><a class="page-link" href="#">Next</a></li>
+			     </ul>
+			 </nav>
+    </div>     
+    </div>	     
+</div>
+</div>
+<script>
+  
+    $('#download-report-btn').on('click',function(){
+        $('#schedule_report').css("visibility","hidden");
+        $('#download_report').css("visibility","visible");
+        $('#download_report').toggleClass('animated slideInLeft');
+        $('#schedule_report').toggleClass('animated slideOutRight')
+    });
+    $('#schedule-report-btn').on('click',function(){
+        $('#schedule_report').css("visibility","visible");
+        $('#download_report').css("visibility","hidden");
+        $('#download_report').toggleClass('animated slideInLeft');
+        $('#schedule_report').toggleClass('animated slideOutRight')
+    });
+
+</script>
+</body>
+</html>
