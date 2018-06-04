@@ -1,0 +1,25 @@
+ol{
+    padding-top:30px;
+}
+ol li a, ol li{
+    vertical-align:middle;
+    font-size:15px;
+}
+.fit{
+    white-space:nowrap;
+}
+.col-xs-6{
+    margin-top:10px;
+}
+.ad-btn{
+    background-color:white;
+    color:#d0021b;
+    border-color:#d0021b!important;
+    font-weight:500!important;
+}
+.ad-btn:hover, .ad-btn:focus{
+    background-color: #d0021b;
+    color: white!important;
+    border-color: none!important;
+    font-weight:700;
+}

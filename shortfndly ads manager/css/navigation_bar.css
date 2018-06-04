@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    font-family: Open Sans;
+    line-height: 1.5;
+}
+
+.clearfix {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.form-control, .btn {
+    height: 45px;
+}
+
+.sf-logo {
+    margin-top: 5px;
+}
+
+    .sf-logo a img {
+        float: left;
+    }
+
+    .sf-logo a span {
+        font-size: 24px;
+        color: #d0021b;
+        line-height: 30px;
+        font-family: 'open_sansbold', Arial;
+    }
+
+    .sf-logo a div {
+        float: left;
+        padding-left: 15px;
+    }
+
+    .sf-logo a em {
+        display: block;
+        font-style: normal;
+        font-size: 8px;
+        color: #000000;
+        text-align: left;
+    }
+
+.section1 {
+    background-color: #f3f3f3;
+}
+
+    .section1 a {
+        color: #d0021b;
+        background-color: #f3f3f3;
+    }
+
+.create-add:hover, .bookings:hover, .your-add:hover {
+    background-color: #d0021b;
+    color: white;
+    height: 100%;
+}
+
+.section1 a div {
+    color: #d0021b;
+    padding: 20px;
+}
+
+#myNavbar ul li a {
+    color: #d0021b;
+    font-size: 18px;
+}
+
+    #myNavbar ul li a:hover {
+        background-color: #d0021b;
+        color: white;
+    }
+
+    #myNavbar ul li a:focus {
+        background-color: #d0021b;
+        color: white;
+        font-weight: 700;
+    }
+
+.icon-bar {
+    color: #d0021b;
+}

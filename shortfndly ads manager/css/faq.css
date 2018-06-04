@@ -1,0 +1,24 @@
+#helping-bars a{
+    display:block;
+    width:100%;
+    height:200px;
+    color:white;
+    background-color:#d0021b;
+    margin:15px;
+    padding:20px;
+}
+#helping-bars div{
+}
+.helping-icons{
+    font-size:100px;
+}
+#img-background {
+    background: url('../images/bg-featured-edited.jpg') no-repeat;
+    height:600px;
+}
+.container-fluid{
+    padding:0px!important;
+}
+#img-background div h1, #img-background div h4,{
+    color:white;
+}

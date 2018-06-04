@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html style="width:100%">
 <head>
   <title>Shortfundly AdsManager</title>
@@ -272,6 +272,12 @@
     document.getElementById('signup-form').style.visibility='visible';
    
   }
+  function login(){
+        location.href = "dashboard.html";
+  }
+  function signup(){
+        location.href = "dashboard.html";
+  }
 </script>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -340,7 +346,7 @@
                             </div>
                             <div class="clearfix">
                               <div class="btn-set">
-                                  <input class="btn btn-block" type="submit" value="Login">
+                                  <input class="btn btn-block" type="button" value="Login" onclick="login()">
                               </div>
                             </div>
                           </div>
@@ -367,7 +373,7 @@
                                 </div>
                                 <div class="clearfix">
                                 <div>
-                                    <input class="btn btn-block" type="submit" value="Signup">
+                                    <input class="btn btn-block" type="button" value="Signup" onclick="signup()">
                                 </div>
                                 </div>
                             </div>
