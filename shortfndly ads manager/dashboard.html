@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html style="width:100%">
+<html>
 <head>
   <title>Shortfundly AdsManager</title>
   <meta charset="utf-8">
@@ -7,96 +7,69 @@
   <!-- fontawesome cdn-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/navigation_bar.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/navigation_bar.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  
 </head>
-
 <body>
+<!-- navigation bar -->
+<nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-right:0; width: 100vw;border:0px; padding-right: 0px!important; background-color: white;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
-                        <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
-                    </div>
-                    <div class="navbar-header col-md-offset-9">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #d0021b; border:0px;">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="dashboard.html">Dashboard</a></li>
-                            <li><a href="ads.html">Ads</a></li>
-                            <li><a href="bookings.html">Bookings</a></li>
-                            <li><a href="reports.html">Reports</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-
-                </div>
+        <div class="row">
+            <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
             </div>
-        </nav>
+            <div class="navbar-header col-md-offset-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="dashboard.html"style="background-color: #d0021b;color: white;font-weight: 700;">Dashboard</a></li>
+                    <li><a href="ads.html">Ads</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    
-    <div class="container-fluid">
-<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-right:0; width: 100vw;border:0px; padding-right: 0px!important; background-color: white;">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
-        <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
-      </div>
-      <div class="navbar-header col-md-offset-9">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #d0021b; border:0px;">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      </div>
-      
-      <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-              <li><a href="dashboard.html">Dashboard</a></li>
-              <li><a href="ads.html">Ads</a></li>
-              <li><a href="bookings.html">Bookings</a></li>
-              <li><a href="reports.html">Reports</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-          </ul>
-      </div>
-        
+</nav>
+<!-- navigation bar ends-->
+<!-- banner starts-->
+<div class="container-fluid" style="margin-top:50px;">
+    <div class="row section1" >
+        <a href="#">
+            <div class="col-md-4 banners">
+                <center><h1>Create Adds</h1><i class="fas fa-plus"></i></center>
+            </div>      
+        </a>
+        <a href="#">
+            <div class="col-md-4 banners">
+                <center><h1>Your Bookings</h1><i class="fas fa-ticket-alt"></i></center>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 banners">
+                <center><h1>Your Adds</h1><i class="fas fa-video"></i></center>
+            </div>
+        </a>
     </div>
-  </div>
-</nav>  
 </div>
-<div class="container-fluid" style="padding-top:50px">
-  <div class="row section1" >
-    <a href="#">
-    <div class="col-md-4 create-add">
-      <center><h1>Create Adds</h1><i class="fas fa-plus" style="font-size:150px;margin-top: 20px; margin-bottom: 10px"></i></center>
-    </div>      
-    </a>
-    <a href="#">
-    <div class="col-md-4 bookings">
-      <center><h1>Your Bookings</h1><i class="fas fa-ticket-alt" style="font-size: 150px;margin-top: 20px; margin-bottom: 10px"></i></center>
-    </div>
-    </a>
-    <a href="#">
-    <div class="col-md-4 your-add">
-      <center><h1>Your Adds</h1><i class="fas fa-video" style="font-size: 150px;margin-top: 20px; margin-bottom: 10px"></i></center>
-    </div>
-    </a>
-  </div>
-</div>
-<div class="container-fluid login-box">
+<!--banner ends-->
+<!--Account Summary-->
+<div class="container-fluid">
   <center><h1>Your Account Summary</h1></center><br><br>
-  <table class="table" style="font-size: 23px; table-layout:auto; text-align:center; border-width:1px">
+  <table class="table" style="">
     <tr>
       <td>Total Campaign : 0</td>
       <td>Total Ads : 0</td>
@@ -113,6 +86,6 @@
     </tr>
   </table>  
 </div>
- 
+<!--Account Summary ends-->
 </body>
 </html>

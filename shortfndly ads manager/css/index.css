@@ -1,0 +1,224 @@
+#Join_us {
+    padding-top: 50px;
+    height: auto;
+    background-color: #1E88E5;
+    width: 100%;
+    background: linear-gradient(45deg, #c70d1d 1%,#d23f0d 30%,#f39a21 100%);
+}
+@media screen and (min-width: 480px) {
+    .login-box {
+        max-width: 700px;
+        max-height: 520px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+}
+.login-box {
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    height: 565px;
+    animation-duration: 1.5s;
+    position: relative;
+}
+.login-box-btn {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.login-btn {
+    width: 100%;
+    height: 55px;
+    border-top-left-radius: 5px;
+    border-left: 0px;
+    background-color: white;
+    color: #d0021b;
+    border: 2px solid #d0021b;
+    font-weight: 700;
+}
+.signup-btn {
+    width: 100%;
+    height: 55px;
+    border-top-right-radius: 5px;
+    border-right: 0px;
+    background-color: white;
+    color: #d0021b;
+    border: 2px solid #d0021b;
+    font-weight: 700;
+}
+.login-btn:focus {
+    background-color: #d0021b;
+    color: white;
+    border-bottom: 5px solid black;
+    padding: 0;
+}
+.signup-btn:focus {
+    background-color: #d0021b;
+    color: white;
+    border-bottom: 5px solid black;
+}
+.login-div {
+    padding: 0px;
+}
+.signup-div {
+    padding: 0px;
+}
+#login-form {
+    position: absolute;
+    left: 15px;
+    top: 50px;
+    right: 15px;
+}
+#signup-form {
+    visibility: hidden;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+#signup-form form {
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    right: 15px;
+    bottom: 0px;
+}
+.signup-form-input {
+    height: 100%;
+}
+.signup-form-details {
+    height: 100%;
+    padding: 15px;
+    padding-top: 5px
+}
+.signup-form-details h3 {
+    color: #d0021b;
+}
+.homebanner {
+    width: 100%;
+    background-size: cover;
+    padding: 70px 0px;
+    padding-top: 100px;
+    margin-bottom: 0;
+    min-height: 100vh;
+    margin-bottom: 0;
+}
+#what-get-icon {
+    color: #d0021b;
+}
+.fadeInLeft, .fadeInRight {
+    animation-delay: -3.5s;
+    animation-duration: 5s;
+}
+
+
+#How_it_works {
+    padding-top: 35px;
+    padding-bottom: 0px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.carousel-inner {
+    height: 530px;
+    color: white;
+}
+.screen-a {
+    background: linear-gradient(-134deg, #29c9d1 0%,#29d1a6 100%);
+    width: 100%;
+    height: 100%
+}
+.screen-b {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(45deg, #439be5 0%,#8943e5 100%);
+    height: 100%
+}
+.screen-c {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(-135deg, #7fc637 0%,#90e23d 100%);
+    height: 100%
+}
+.screen-d {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(-135deg, #ebbc0b 0%,#e58c43 100%);
+    height: 100%
+}
+.screen-a h2, .screen-b h2, .screen-c h2, .screen-d h2 {
+    margin-top: 0;
+}
+
+
+#About_us {
+    padding: 70px;
+    background-color: #d0021b;
+    color: white;
+}
+.dot {
+    color: white;
+    font-size: 45px;
+}
+.fa{
+    font-size:5vw;
+}
+.mission{
+    padding:15px;
+}
+
+
+#Appreciations {
+    min-height: 400px;
+    color: black;
+    padding: 70px;
+    margin:0;
+}
+.news_icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#Contacts {
+    background: linear-gradient(-134deg, #000000 20%,#4b4d51 100%);
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    min-height: 350px;
+}
+@media screen and (min-width: 992px) {
+    .social-networks {
+        border: none;
+        float: right;
+    }
+}
+.social-networks {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.social-div {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.social-network-icons {
+    color: white;
+    font-size: 40px;
+}
+.social-network-icons:hover {
+    color: #d0021b;
+}
+.footer-li li a{
+    color:white;
+}
+.footer-a{
+    color:white;
+}
+
+
+
+

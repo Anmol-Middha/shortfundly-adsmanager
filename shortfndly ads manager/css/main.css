@@ -1,0 +1,40 @@
+body {
+    position: relative;
+    font-family: Open Sans;
+    line-height: 1.5;
+}
+
+.clearfix {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.form-control, .btn {
+    height: 45px;
+}
+
+.btn {
+    font-weight: 700;
+    background-color: #d0021b;
+    color: white;
+}
+
+.title-font {
+    font-family: Montserrat,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+
+.subtitle-font {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-font {
+    font-size: 11px;
+    font-family: Open Sans;
+    line-height: 2.8;
+    color: rgba(255,255,255,0.5);
+}

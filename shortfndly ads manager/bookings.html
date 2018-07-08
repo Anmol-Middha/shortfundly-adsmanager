@@ -7,154 +7,150 @@
     <!-- fontawesome cdn-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/navigation_bar.css" />
-    <link rel="stylesheet" href="css/ads.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navigation_bar.css" />
+    <link rel="stylesheet" href="css/ads.css" />
 </head>
-
-
 <body>
+<!-- navigation bar -->
+<nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-right:0; width: 100vw;border:0px; padding-right: 0px!important; background-color: white;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
-                        <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
-                    </div>
-                    <div class="navbar-header col-md-offset-9">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #d0021b; border:0px;">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="dashboard.html">Dashboard</a></li>
-                            <li><a href="ads.html">Ads</a></li>
-                            <li><a href="bookings.html">Bookings</a></li>
-                            <li><a href="reports.html">Reports</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <div class="container-fluid" style="background-color:white; padding-top:100px;">
-        <h2>My Bookings</h2>
-        <ol class="breadcrumb" style="width:100%">
-            <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
-            <li class="breadcrumb-item active">Bookings</li>
-        </ol>
-
         <div class="row">
-            <div class="col-md-3 col-xs-6"><input type="date" class="form-control" name="" style="height:45px"></div>
-            <div class="col-md-3 col-xs-6"><input type="date" class="form-control" name="" style="height:45px"></div>
-            <div class="col-md-3 col-xs-6"><button class="btn btn-block ad-btn" name="">Export to Excel</button></div>
-            <div class="col-md-3 col-xs-6"><button class="btn btn-block ad-btn" name="">Export to PDF</button></div>
-        </div><br />
+            <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
+            </div>
+            <div class="navbar-header col-md-offset-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="ads.html">Ads</a></li>
+                    <li><a href="bookings.html" style="background-color: #d0021b;color: white;font-weight: 700;">Bookings</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="container-fluid" style="margin-top:20px; background:linear-gradient(to right, #ed213a, #93291e); color:white;">
-        <div class="row fit">
-            <div class="col-md-3 col-xs-6">
-                <label>Show</label>
-                <select class="form-control" name="">
-                    <option>10</option>
-                    <option>25</option>
-                    <option>50</option>
-                    <option>100</option>
-                </select>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <label>Ads status</label>
-                <select class="form-control" name="">
-                    <option>All</option>
-                    <option>Completed</option>
-                </select>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <label>Creative Ads</label>
-                <select class="form-control">
-                    <option>All</option>
-                    <option>No creative</option>
-                    <option>Pending</option>
-                    <option>Active</option>
-                    <option>InActive</option>
-                </select>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <label>&nbsp;</label>
-                <div class="input-group add-on" style="width: 100%">
-                    <input type="text" name="search" id="search" class="form-control" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button type="button" name="srchbtn" class="btn" onclick="" style="height:34px;"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </div>
+</nav>
+<!-- navigation bar ends-->
+<!--user options-->
+<div class="container-fluid" style="padding-top:70px;">
+    <h2>My Bookings</h2>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Bookings</li>
+    </ol>
+    <div><button class="btn btn-block ad-btn create-ad-btn">CREATE ADS</button></div>
+    <div class="row">
+        <div class="col-md-3 col-xs-6"><input type="date" class="form-control ad-input" name="" style="height:45px"></div>
+        <div class="col-md-3 col-xs-6"><input type="date" class="form-control ad-input" name="" style="height:45px"></div>
+        <div class="col-md-3 col-xs-6"><button class="btn btn-block ad-btn" name="">Export to Excel</button></div>
+        <div class="col-md-3 col-xs-6"><button class="btn btn-block ad-btn" name="">Export to PDF</button></div>
+    </div><br />
+</div>
+<!--user option ends-->
+<!--ad details-->
+<div class="container-fluid ad-details">
+    <div class="row fit">
+        <div class="col-md-3 col-xs-6">
+            <label>Show</label>
+            <select class="form-control" name="">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <label>Ads status</label>
+            <select class="form-control" name="">
+                <option>All</option>
+                <option>Completed</option>
+            </select>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <label>Creative Ads</label>
+            <select class="form-control">
+                <option>All</option>
+                <option>No creative</option>
+                <option>Pending</option>
+                <option>Active</option>
+                <option>InActive</option>
+            </select>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <label>&nbsp;</label>
+            <div class="input-group add-on">
+                <input type="text" name="search" id="search" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                    <button type="button" name="srchbtn" id="srchbtn" class="btn" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
-        <div style="overflow-x: scroll; margin-top:15px">
-            <table class="table table-responsive">
-                <tr>
-                    <th class="fit">BOOKING ID</th>
-                    <th class="fit">CAMPAIGN NAME</th>
-                    <th class="fit">AD PRODUCT</th>
-                    <th class="fit">STATUS</th>
-                    <th class="fit">BOOKED IMPRESSIONS</th>
-                    <th class="fit">DELIVERED IMPRESSIONS</th>
-                    <th class="fit">CLICKS</th>
-                    <th class="fit">CTR</th>
-                    <th class="fit">CPM</th>
-                    <th class="fit">FINAL AD COST</th>
-                    <th class="fit">AD COST</th>
-                    <th class="fit">CURRENCY</th>
-                    <th class="fit">START DATE</th>
-                    <th class="fit">FINISH DATE</th>
-                    <th class="fit">CREATIVE</th>
-                </tr>
-                <tr>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                    <td class="data-color">sample</td>
-                <tr>
-            </table>
-            <br />
-
-        </div>
-        Showing x to x of x entries
     </div>
-    <div class="pagination pagination-centered" style="background-color:white;width:100%; text-align:center">
-        <ul class="pagination pagination-centered">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
+    <div style="overflow-x: scroll; margin-top:15px">
+        <table class="table table-responsive">
+            <tr>
+                <th class="fit">BOOKING ID</th>
+                <th class="fit">CAMPAIGN NAME</th>
+                <th class="fit">AD PRODUCT</th>
+                <th class="fit">STATUS</th>
+                <th class="fit">BOOKED IMPRESSIONS</th>
+                <th class="fit">DELIVERED IMPRESSIONS</th>
+                <th class="fit">CLICKS</th>
+                <th class="fit">CTR</th>
+                <th class="fit">CPM</th>
+                <th class="fit">FINAL AD COST</th>
+                <th class="fit">AD COST</th>
+                <th class="fit">CURRENCY</th>
+                <th class="fit">START DATE</th>
+                <th class="fit">FINISH DATE</th>
+                <th class="fit">CREATIVE</th>
+            </tr>
+            <tr>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+                <td class="data-color">sample</td>
+            <tr>
+        </table>
+        <br />
     </div>
-
-
-
-
+    Showing x to x of x entries
+</div>
+<!--ad details ends-->
+<!--pagination-->
+<div class="pagination pagination-centered" id="pagination">
+    <ul class="pagination pagination-centered">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</div>
+<!--pagination ends-->
 </body>
 </html>

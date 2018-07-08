@@ -8,18 +8,47 @@ ol li a, ol li{
 .fit{
     white-space:nowrap;
 }
-.col-xs-6{
-    margin-top:10px;
+.fit .col-xs-6{
+    margin-top:15px;
 }
 .ad-btn{
     background-color:white;
     color:#d0021b;
     border-color:#d0021b!important;
     font-weight:500!important;
+    margin-top:10px;
+}
+.ad-input{
+    margin-top:10px;
 }
 .ad-btn:hover, .ad-btn:focus{
     background-color: #d0021b;
     color: white!important;
     border-color: none!important;
     font-weight:700;
+}
+.create-ad-btn {
+    height: 55px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    max-width: 500px
+}
+#pagination {
+    background-color: white;
+    width: 100%;
+    text-align: center
+}
+.ad-details {
+    margin-top: 20px;
+    background: linear-gradient(to right, #ed213a, #93291e);
+    color: white;
+}
+#srchbtn{
+    height:45px;
+    background-color:#ededed;
+}
+#srchbtn i{
+    color:#d0021b;
 }

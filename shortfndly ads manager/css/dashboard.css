@@ -1,0 +1,16 @@
+.banners {
+    font-size: 150px;
+    color:#d0021b;
+    background-color:#ededed;
+
+}
+table {
+    font-size: 23px;
+    table-layout: auto;
+    text-align: center;
+    border-width: 1px
+}
+.banners:hover{
+    background-color:#d0021b;
+    color:white;
+}

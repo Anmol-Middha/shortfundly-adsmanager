@@ -7,94 +7,97 @@
     <!-- fontawesome cdn-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/navigation_bar.css" />
-    <link rel="stylesheet" href="css/faq.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/navigation_bar.css" />
 </head>
 
 
 <body>
+<!-- navigation bar -->
+<nav class="navbar navbar-fixed-top" style="padding-left:15px; width:100vw;">
     <div class="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-right:0; width: 100vw;border:0px; padding-right: 0px!important; background-color: white;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
-                        <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
-                    </div>
-                    <div class="navbar-header col-md-offset-9">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #d0021b; border:0px;">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="dashboard.html">Dashboard</a></li>
-                            <li><a href="ads.html">Ads</a></li>
-                            <li><a href="bookings.html">Bookings</a></li>
-                            <li><a href="reports.html">Reports</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-
-                </div>
+        <div class="row">
+            <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
             </div>
-        </nav>
+            <div class="navbar-header col-md-offset-9">
+                <button type="button" id="icon-button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="ads.html">Ads</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="faq.html" style="background-color: #d0021b;color: white;font-weight: 700;">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-<div class="container-fluid" style="padding-top:100px">
-    <div class="container-fluid" id="img-background">
-        <div class="col-xs-offset-9 col-xs-3" style="padding-top:100px">
-            <h1 style="color:white">Welcome</h1>
-            <h4 style="color:white">Here you can find information about the platform and answers to the most common questions regarding ad bookings and management</h4>
-            <div class="input-group add-on" style="width: 100%">
+</nav>
+<!--navigation bar ends-->
+<!--container starts-->
+<div class="container-fluid" style="margin-top:50px">
+    <!--image background-->
+    <div id="img-background">
+        <div class="col-sm-3">
+            <h1>Welcome</h1>
+            <h4>Here you can find information about the platform and answers to the most common questions regarding ad bookings and management</h4>
+            <div class="input-group add-on">
                 <input type="text" name="search" id="search" class="form-control" placeholder="Search">
                 <div class="input-group-btn">
-                    <button type="button" name="srchbtn" class="btn" onclick="" style="height:34px;"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button type="button" name="srchbtn" id="srchbtn" class="btn" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
     </div>
+    <!--image background ends-->
+    <!--helping bars-->
     <div class="container">
         <div class="row" id="helping-bars">
             <div class="col-md-4">
                 <a href="#"><center><span class="helping-icons"><i class="fas fa-user-circle"></i></span><h4>MY PROFILE</h4></center></a>
             </div>
             <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="fas fa-edit"></i></span><h4>MY PROFILE</h4></center></a>
+                <a href="#"><center><span class="helping-icons"><i class="fas fa-edit"></i></span><h4>CREATING AN AD</h4></center></a>
             </div>
             <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="fas fa-bullseye"></i></span><h4>MY PROFILE</h4></center></a>
-            </div>
-        </div>
-        <div class="row" id="helping-bars">
-            <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="far fa-folder-open"></i></span><h4>MY PROFILE</h4></center></a>
-            </div>
-            <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="fas fa-image"></i></span><h4>MY PROFILE</h4></center></a>
-            </div>
-            <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="fas fa-shopping-cart"></i></span><h4>MY PROFILE</h4></center></a>
+                <a href="#"><center><span class="helping-icons"><i class="fas fa-bullseye"></i></span><h4>TARGETING</h4></center></a>
             </div>
         </div>
         <div class="row" id="helping-bars">
             <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="far fa-credit-card"></i></span><h4>MY PROFILE</h4></center></a>
+                <a href="#"><center><span class="helping-icons"><i class="far fa-folder-open"></i></span><h4>MANAGING MY ADS</h4></center></a>
             </div>
             <div class="col-md-4">
-                <a href="#"><center><span class="helping-icons"><i class="fas fa-chart-bar"></i></span><h4>MY PROFILE</h4></center></a>
+                <a href="#"><center><span class="helping-icons"><i class="fas fa-image"></i></span><h4>CREATIVES</h4></center></a>
+            </div>
+            <div class="col-md-4">
+                <a href="#"><center><span class="helping-icons"><i class="fas fa-shopping-cart"></i></span><h4>MANAGING MY BOOKINGS</h4></center></a>
+            </div>
+        </div>
+        <div class="row" id="helping-bars">
+            <div class="col-md-4">
+                <a href="#"><center><span class="helping-icons"><i class="far fa-credit-card"></i></span><h4>BILLINGS AND PAYMENT</h4></center></a>
+            </div>
+            <div class="col-md-4">
+                <a href="#"><center><span class="helping-icons"><i class="fas fa-chart-bar"></i></span><h4>PERFORMANCE AND REPORTING</h4></center></a>
             </div>
         </div>
     </div>
+    <!--helping bar ends-->
 </div>
-    
-
+<!--container ends-->
 </body>
 </html>

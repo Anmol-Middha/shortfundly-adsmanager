@@ -1,0 +1,76 @@
+ol{
+    padding-top: 30px;
+}
+ol li a, ol li {
+    vertical-align: middle;
+    font-size: 15px;
+}
+.fit {
+    white-space: nowrap;
+    margin:0px;
+}
+.ad-btn {
+    background-color: white;
+    color: #d0021b;
+    border-color: #d0021b !important;
+    font-weight: 500 !important;
+    margin-top: 10px;
+}
+
+.ad-input {
+    margin-top: 10px;
+}
+
+
+.ad-btn:hover, .ad-btn:focus {
+    background-color: #d0021b;
+    color: white !important;
+    border-color: none !important;
+    font-weight: 700;
+}
+
+.create-ad-btn {
+    height: 55px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    max-width: 500px
+}
+#pagination {
+    background-color: white;
+    text-align: center;
+    width:100%;
+}
+#srchbtn {
+    height: 45px;
+    background-color: #ededed;
+}
+
+#srchbtn i {
+    color: #d0021b;
+}
+#download-report-btn, #schedule-report-btn {
+    margin-top: 10px;
+    white-space: normal
+}
+#download_report {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    background: linear-gradient(to right, #ed213a, #93291e);
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+#schedule_report {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to right, #ed213a, #93291e);
+    color: white;
+    width: 100%;
+}
