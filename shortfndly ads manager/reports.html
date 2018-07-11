@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navigation_bar.css" />
     <link rel="stylesheet" href="css/reports.css" />
+    <script src="js/createad_trigger.js"></script>
 </head>
 <body>
 <!-- navigation bar -->
@@ -47,13 +48,13 @@
 <!-- navigation bar ends-->
     
 <!-- user option starts-->
-<div class="container-fluid" style="padding-top:70px;">
+<div class="container-fluid" style="padding-top:100px;">
     <h2>Reports</h2>
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
         <li class="breadcrumb-item active">Reports</li>
     </ol>
-    <div><button class="btn btn-block ad-btn create-ad-btn">CREATE ADS</button></div>
+    <div><button class="btn btn-block ad-btn create-ad-btn" onclick="createAd()">CREATE ADS</button></div>
     <div class="row">
         <div class="col-md-6 col-xs-6"><button class="btn btn-block ad-btn" id="download-report-btn">DOWNLOAD REPORT</button></div>
         <div class="col-md-6 col-xs-6"><button class="btn btn-block ad-btn" id="schedule-report-btn">SCHEDULE REPORT DELEIVERY</button></div>

@@ -15,77 +15,488 @@
   <link rel="stylesheet" href="css/navigation_bar.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/dashboard.css" />
-  
 </head>
 <body>
 <!-- navigation bar -->
-<nav class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
-                <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
-            </div>
-            <div class="navbar-header col-md-offset-9">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="dashboard.html"style="background-color: #d0021b;color: white;font-weight: 700;">Dashboard</a></li>
-                    <li><a href="ads.html">Ads</a></li>
-                    <li><a href="bookings.html">Bookings</a></li>
-                    <li><a href="reports.html">Reports</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                    <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
+                </div>
+                <div class="navbar-header col-md-offset-9">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dashboard.html"  style="background-color: #d0021b;color: white;font-weight: 700;">Dashboard</a></li>
+                        <li><a href="ads.html">Ads</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 <!-- navigation bar ends-->
-<!-- banner starts-->
-<div class="container-fluid" style="margin-top:50px;">
-    <div class="row section1" >
-        <a href="#">
-            <div class="col-md-4 banners">
-                <center><h1>Create Adds</h1><i class="fas fa-plus"></i></center>
-            </div>      
-        </a>
-        <a href="#">
-            <div class="col-md-4 banners">
-                <center><h1>Your Bookings</h1><i class="fas fa-ticket-alt"></i></center>
-            </div>
-        </a>
-        <a href="#">
-            <div class="col-md-4 banners">
-                <center><h1>Your Adds</h1><i class="fas fa-video"></i></center>
-            </div>
-        </a>
+
+<div id="mySidenav" class="sidenav" style="overflow:hidden">
+    <h2 style="position:fixed">Your Ads<br /><small>Have a fast look!</small></h2>
+    <div id="user-ads" style="visibility:hidden; position:absolute; top: 50px;">
+        <div class="col-xs-6" style="margin-bottom:15px;">
+            <select>
+            <option selected>All</option>
+            <option>Pending</option>
+            <option>Completed</option>
+            <option>Running</option>
+            </select>
+        </div>
+        <div class="col-xs-6" style="margin-bottom:15px;">
+            <select>
+            <option>All</option>    
+            <option>Last week</option>
+            <option>Last Month</option>
+            </select>      
+        </div>
+        <div class="col-xs-6" style="margin-bottom:15px;">
+            <select>
+                <option selected disabled>Sort by</option>
+                <option>Compaign</option>
+                <option>Product</option>
+                <option>Start Date</option>
+                <option>Impressions</option>
+            </select>
+        </div>
+        <div class="col-xs-6">
+            <i class="fas fa-sort-amount-up"></i>
+            <i class="fas fa-sort-amount-down"></i>
+        </div>
+        <ul style="padding:0px 0px;">
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+            <li style="padding-bottom:15px; margin:10px 25px;">
+                <video width="200" height="150" controls>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Campaign:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Product:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Start Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        End Date:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Status:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        Impressions:
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-5 text-muted">
+                        sample
+                    </div>
+                </div>
+            </li>
+            <hr />
+        </ul>
     </div>
 </div>
-<!--banner ends-->
-<!--Account Summary-->
-<div class="container-fluid">
-  <center><h1>Your Account Summary</h1></center><br><br>
-  <table class="table" style="">
-    <tr>
-      <td>Total Campaign : 0</td>
-      <td>Total Ads : 0</td>
-    </tr>
-     <tr>
-      <td>Bookings : 0</td>
-      <td>Ads pending : 0</td>
-    </tr>
-    <tr>
-      <td colspan="2">Ads completed : 0</td>
-    </tr>
-    <tr>
-      <td colspan="2">Total Deleivered Impressions : 0</td>
-    </tr>
-  </table>  
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main" style="margin-left:75px;">
+    <!-- banner starts-->
+    <div class="container-fluid" style="margin-top:100px;">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="banners banners1"><a href="create-ads.html"><center><h2>Create Adds</h2><i class="fas fa-plus"></i></center></a><p class="btn-details" data-toggle="collapse" data-target="#details1"><i class="fas fa-angle-down"></i></p><div id="details1" class="collapse">details and benefits about selected option</div></div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="banners banners2"><a href="#"><center><h2>Your Bookings</h2><i class="fas fa-ticket-alt"></i></center></a><p class="btn-details" data-toggle="collapse" data-target="#details2"><i class="fas fa-angle-down"></i></p><div id="details2" class="collapse">details and benefits about selected option</div></div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--banner ends-->
+    <!--Account Summary-->
+    <div class="container-fluid">
+        <table class="table">
+            <tr><td colspan="2"><h1>Account Summary</h1></td></tr>
+            <tr>
+                <td>Total Campaign : 0</td>
+                <td>Total Ads : 0</td>
+            </tr>
+            <tr>
+                <td>Bookings : 0</td>
+                <td>Ads pending : 0</td>
+            </tr>
+            <tr>
+                <td colspan="2">Ads completed : 0</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Deleivered Impressions : 0</td>
+            </tr>
+        </table>
+    </div>
+    <!--Account Summary ends-->
+    <script>
+        $(document).ready(function () {
+            $('.banners1 p').mouseover(function () {
+                $('.banners1 a').css('color', 'white');
+            });
+            $('.banners1 p').mouseout(function () {
+                $('.banners1 a').css('color', '#d0021b');
+            });
+            $('.banners1 a').mouseover(function () {
+                $('.banners1 a').css('color', 'white');
+            });
+            $('.banners1 a').mouseout(function () {
+                $('.banners1 a').css('color', '#d0021b');
+            });
+            $('.banners2 p').mouseover(function () {
+                $('.banners2 a').css('color', 'white');
+            });
+            $('.banners2 p').mouseout(function () {
+                $('.banners2 a').css('color', '#d0021b');
+            });
+            $('.banners2 a').mouseover(function () {
+                $('.banners2 a').css('color', 'white');
+            });
+            $('.banners2 a').mouseout(function () {
+                $('.banners2 a').css('color', '#d0021b');
+            });
+            $('.banners3 p').mouseover(function () {
+                $('.banners3 a').css('color', 'white');
+            });
+            $('.banners3 p').mouseout(function () {
+                $('.banners3 a').css('color', '#d0021b');
+            });
+            $('.banners3 a').mouseover(function () {
+                $('.banners3 a').css('color', 'white');
+            });
+            $('.banners3 a').mouseout(function () {
+                $('.banners3 a').css('color', '#d0021b');
+            });
+        });
+        $('#mySidenav').mouseover(function() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            $(this).css({ 'background-color': 'white', 'overflow': 'auto' });
+            $('#mySidenav h2').css('visibility', 'hidden');
+            $('#user-ads').css('visibility', 'visible');
+        });
+        
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        $('#mySidenav').mouseout(function() {
+            document.getElementById("mySidenav").style.width = "75px";
+            document.getElementById("main").style.marginLeft = "75px";
+            document.body.style.backgroundColor = "#e1e3e4";
+            $(this).css({ 'background-color': '#d0021b','overflow':'hidden'});
+            $('#mySidenav h2, #mySidenav h2 small').css({ 'color': 'white', 'visibility': 'visible' });
+            $('#user-ads').css('visibility', 'hidden'); 
+        });
+    </script>
 </div>
-<!--Account Summary ends-->
+
 </body>
 </html>

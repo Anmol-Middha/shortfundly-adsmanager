@@ -5,13 +5,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation_bar.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="container-fluid">
-        <h2>New Ads</h2>
-        <ol class="breadcrumb" style="width:100%">
+<body style="background-color:#e1e3e4">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                    <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
+                </div>
+                <div class="navbar-header col-md-offset-9">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="ads.html">Ads</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation bar ends-->
+
+    <div class="container-fluid" style="padding-top:50px;">
+        <h2 style="color:#d0021b">New Ads</h2>
+        <ol class="breadcrumb" style="width:100%; background-color:white">
             <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
             <li class="breadcrumb-item">Ads</li>
             <li class="breadcrumb-item active"><a href="#">New Ad</a></li>
@@ -138,150 +168,157 @@
 
                 </form>
             </div>
-            <div id="regForm">
-            <div class="col-sm-offset-3">
-                <nav class="col-sm-3">
-                    <ul class="nav" data-spy="affix">
-                        <li><h3>Your Bill Info</h3></li>
-                        <li><h2>INR 200</h2></li>
-                        <br />
-                        <li><h4>Targetting</h4></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Time Targeting:</span>None</h5></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Frequency Capping:</span>None</h5></li>
-                        <br />
-                        <li><h4>Ad Settings</h4></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Ad Product:</span>None</h5></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Budget:</span>None</h5></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Time Period:</span>None</h5></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Target Impression:</span>None</h5></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">Total Impression Available:</span>None</h5></li>
-                        <li><h5><span class="text-muted" style="white-space:nowrap">CPM:</span>None</h5></li>
-                        <br />
+            <div id="regForma">
+                <div class="col-sm-offset-3">
+                    <nav class="col-sm-3" style="background:none;">
+                        <ul class="nav" data-spy="affix">
+                            <li><h3>Your Bill Info</h3></li>
+                            <li><h2>INR 200</h2></li>
+                            <br />
+                            <li><h4>Targetting</h4></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Time Targeting:</span>None</h5></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Frequency Capping:</span>None</h5></li>
+                            <br />
+                            <li><h4>Ad Settings</h4></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Ad Product:</span>None</h5></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Budget:</span>None</h5></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Time Period:</span>None</h5></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Target Impression:</span>None</h5></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">Total Impression Available:</span>None</h5></li>
+                            <li><h5><span class="text-muted" style="white-space:nowrap">CPM:</span>None</h5></li>
+                            <br />
 
-                    </ul>
-                </nav>
-            </div>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
-        <style>
-            .clearfix {
-                padding-top: 15px;
+    <style>
+        .affix {
+            background: #d0021b;
+            padding: 25px;
+            color: white;
+        }
+        .text-muted{
+            color:#e1e3e4;
+        }
+        .clearfix {
+            padding-top: 15px;
+        }
+
+        #regForm {
+            background-color: #ffffff;
+            margin: 10px auto;
+            padding: 10px 40px;
+            margin-top:0px!important;
+            width: 70%;
+            min-width: 300px;
+        }
+
+        /* Style the input fields */
+        input {
+            padding: 10px;
+            font-size: 17px;
+            font-family: Raleway;
+            border: 1px solid #aaaaaa;
+        }
+
+            /* Mark input boxes that gets an error on validation: */
+            input.invalid {
+                background-color: #ffdddd;
             }
 
-            #regForm {
-                background-color: #ffffff;
-                margin: 10px auto;
-                padding: 10px 40px;
+        /* Hide all steps by default: */
+        .tab {
+            display: none;
+        }
 
-                width: 70%;
-                min-width: 300px;
+        /* Make circles that indicate the steps of the form: */
+        .step {
+            height: 15px;
+            width: 15px;
+            margin: 0 10px;
+            background-color: #d0021b;
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+        }
+
+            /* Mark the active step: */
+            .step.active {
+                opacity: 1;
             }
 
-            /* Style the input fields */
-            input {
-                padding: 10px;
-                font-size: 17px;
-                font-family: Raleway;
-                border: 1px solid #aaaaaa;
-            }
-
-                /* Mark input boxes that gets an error on validation: */
-                input.invalid {
-                    background-color: #ffdddd;
-                }
-
-            /* Hide all steps by default: */
-            .tab {
-                display: none;
-            }
-
-            /* Make circles that indicate the steps of the form: */
-            .step {
-                height: 15px;
-                width: 15px;
-                margin: 0 10px;
+            /* Mark the steps that are finished and valid: */
+            .step.finish {
                 background-color: #d0021b;
-                border: none;
-                border-radius: 50%;
-                display: inline-block;
-                opacity: 0.5;
-
             }
+    </style>
+    <script type="text/javascript">
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
 
-                /* Mark the active step: */
-                .step.active {
-                    opacity: 1;
-                }
-
-                /* Mark the steps that are finished and valid: */
-                .step.finish {
-                    background-color: #d0021b;
-                }
-        </style>
-        <script type="text/javascript">
-            var currentTab = 0; // Current tab is set to be the first tab (0)
-            showTab(currentTab); // Display the current tab
-
-            function showTab(n) {
-                // This function will display the specified tab of the form ...
-                var x = document.getElementsByClassName("tab");
-                x[n].style.display = "block";
-                // ... and fix the Previous/Next buttons:
-                if (n == 0) {
-                    document.getElementById("prevBtn").style.display = "none";
-                } else {
-                    document.getElementById("prevBtn").style.display = "inline";
-                }
-                if (n == (x.length - 1)) {
-                    document.getElementById("nextBtn").innerHTML = "Submit";
-                } else {
-                    document.getElementById("nextBtn").innerHTML = "Next";
-                }
-                // ... and run a function that displays the correct step indicator:
-                fixStepIndicator(n)
+        function showTab(n) {
+            // This function will display the specified tab of the form ...
+            var x = document.getElementsByClassName("tab");
+            x[n].style.display = "block";
+            // ... and fix the Previous/Next buttons:
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "inline";
             }
-
-            function nextPrev(n) {
-                // This function will figure out which tab to display
-                var x = document.getElementsByClassName("tab");
-                // Exit the function if any field in the current tab is invalid:
-                if (n == 1 && !validateForm()) return false;
-                // Hide the current tab:
-                x[currentTab].style.display = "none";
-                // Increase or decrease the current tab by 1:
-                currentTab = currentTab + n;
-                // if you have reached the end of the form... :
-                if (currentTab >= x.length) {
-                    //...the form gets submitted:
-                    document.getElementById("regForm").submit();
-                    return false;
-                }
-                // Otherwise, display the correct tab:
-                showTab(currentTab);
+            if (n == (x.length - 1)) {
+                document.getElementById("nextBtn").innerHTML = "Submit";
+            } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
             }
+            // ... and run a function that displays the correct step indicator:
+            fixStepIndicator(n)
+        }
 
-            function validateForm() {
-                // This function deals with validation of the form fields
-                var x, y, i, valid = true;
-                x = document.getElementsByClassName("tab");
-                y = x[currentTab].getElementsByTagName("input");
-                // If the valid status is true, mark the step as finished and valid:
-                if (valid) {
-                    document.getElementsByClassName("step")[currentTab].className += " finish";
-                }
-                return valid; // return the valid status
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("tab");
+            // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form... :
+            if (currentTab >= x.length) {
+                //...the form gets submitted:
+                document.getElementById("regForm").submit();
+                return false;
             }
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
 
-            function fixStepIndicator(n) {
-                // This function removes the "active" class of all steps...
-                var i, x = document.getElementsByClassName("step");
-                for (i = 0; i < x.length; i++) {
-                    x[i].className = x[i].className.replace(" active", "");
-                }
-                //... and adds the "active" class to the current step:
-                x[n].className += " active";
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("tab");
+            y = x[currentTab].getElementsByTagName("input");
+            // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("step")[currentTab].className += " finish";
             }
-        </script>
+            return valid; // return the valid status
+        }
+
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("step");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class to the current step:
+            x[n].className += " active";
+        }
+    </script>
 </body>
 </html>
